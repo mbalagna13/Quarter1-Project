@@ -1,0 +1,35 @@
+Roles
+
+* Non-players seeking knowledge
+* Casual melee player
+* Casual Gamer
+* Competitive Player
+* Game developers
+
+
+
+
+User Stories
+
+* As a casual gamer, I want to search for what attacks a character has.
+  - Being able to clearly see the character's attacks
+* As an aspiring player, I want to find videos of top level players.
+  - Finding videos of the top level players.
+* As a competitive player, I want to find out why my attack is losing, being out prioritized
+by another attack
+  - To broad. Can be broken down into other/similar stories like other made stories.
+
+* As a competitive game, I want to find my characters fastest attacks
+  - Giving the user frame data for each attack
+
+* As person who is constantly losing to his friend, I want to find information on
+how to beat my friends.
+
+* As a competitive player, I want to find an attack that is best for my situation.
+  - As a competitive player, I want to find the active frames of Peach's down smash.
+
+* As a game developer, I want to see how the frames are dispersed through the animation
+itself. (What frames are doing what, what frames are active, not active. )
+  - Giving the user the data of the frames.
+
+* As a casual player, I would like to know what are other resources for melee.

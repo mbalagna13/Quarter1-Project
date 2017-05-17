@@ -37,6 +37,7 @@ character's attacks and special moves. All while hoping to
 
 ## What web API(s) will it use?
 * The [SmashLounge API] (http://www.smashlounge.com/api/doc)
+*  The [Reddit API](https://www.reddit.com/dev/api/#section_subreddits)
 
 
 ## What technologies do you plan to use?
@@ -50,7 +51,10 @@ character's attacks and special moves. All while hoping to
 
 
 ## Feature list
-* Getting and retrieving character specific attack frame data
+* Getting and retrieving character specific attack frame data as text
 * GIF showing said attack
   * GIF will be showing hit boxes and active frames of the attack
+  *Stretch*
 * A search for GIFs of a character , not just frame data GIFs
+* Search /r/smashbros for post pertaining to a specific character
+ * Search for smash videos for certain characters
