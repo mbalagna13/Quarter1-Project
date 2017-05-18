@@ -15,7 +15,7 @@ $('.DrMario, .Mario, .Luigi, .Bowser, .Peach, .Yoshi, .DonkeyKong, .CaptainFlaco
 
 //click on Jab 1 and get jab frames
 $(".jab1").click(function(){
-  $(".totalframes").empty().append("Total Frames: " + characterArr["0"].attacks.jab["0"].total_frames+ "  Active Frames: " + characterArr[0].attacks.jab[0].hit_start + "-" +characterArr[0].attacks.jab[0].hit_end);
+  $(".totalframes").empty().append("<p>Total Frames: " + characterArr["0"].attacks.jab["0"].total_frames+ "  Active Frames: " + characterArr[0].attacks.jab[0].hit_start + "-" +characterArr[0].attacks.jab[0].hit_end + "<p>");
   $(".card-title").empty().append("Frame Data for " + $(this).text())
   $(".gifattack").attr("src", "https://smashboards.com/proxy.php?image=http%3A%2F%2Fi882.photobucket.com%2Falbums%2Fac30%2FX1-12%2FFoxJab.gif%3Ft%3D1282910671&hash=26b37c01a59c854fece263e44035a494")
   // $(".activeframes").append("<p>Active Frames: " + foxArr.hit_start + "-" +foxArr.hit_end+ "<p>" )
@@ -23,7 +23,7 @@ $(".jab1").click(function(){
 )
 
 $(".jab2").click(function(){
-  $(".totalframes").empty().append("Total Frames: " + characterArr["0"].attacks.jab["1"].total_frames+ "  Active Frames: " + characterArr[0].attacks.jab[1].active_start + "-" +characterArr[0].attacks.jab[1].active_end);
+  $(".totalframes").empty().append("<p>Total Frames: " + characterArr["0"].attacks.jab["1"].total_frames+ "  Active Frames: " + characterArr[0].attacks.jab[1].active_start + "-" +characterArr[0].attacks.jab[1].active_end);
   $(".card-title").empty().append("Frame Data for " + $(this).text())
   // $(".gifattack").attr("src", "https://smashboards.com/proxy.php?image=http%3A%2F%2Fi882.photobucket.com%2Falbums%2Fac30%2FX1-12%2FFoxJab.gif%3Ft%3D1282910671&hash=26b37c01a59c854fece263e44035a494")
   // $(".activeframes").append("<p>Active Frames: " + foxArr.hit_start + "-" +foxArr.hit_end+ "<p>" )
@@ -31,28 +31,51 @@ $(".jab2").click(function(){
 )
 
 $(".jab3").click(function(){
-  $(".totalframes").empty().append("Total Frames: " + characterArr["0"].attacks.jab["2"].total_frames+ "  Active Frames: " + characterArr[0].attacks.jab[2].hit_start + "-" +characterArr[0].attacks.jab[2].hit_end);
+  $(".totalframes").empty().append("<p>Total Frames: " + characterArr["0"].attacks.jab["2"].total_frames+ "  Active Frames: " + characterArr[0].attacks.jab[2].hit_start + "-" +characterArr[0].attacks.jab[2].hit_end + "<p>");
   $(".card-title").empty().append("Frame Data for" + $(this).text())
 })
-
+//Tilt functions
 $(".ftilt").click(function(){
-  $(".totalframes").empty().append("Total Frames: " + characterArr["0"].attacks.tilt[2].total_frames+ "  Active Frames: " + characterArr["0"].attacks.tilt[2].hit_start + "-" +characterArr["0"].attacks.tilt[2].hit_end);
+  $(".totalframes").empty().append("<p>Total Frames: " + characterArr["0"].attacks.tilt[2].total_frames+ "  Active Frames: " + characterArr["0"].attacks.tilt[2].hit_start + "-" +characterArr["0"].attacks.tilt[2].hit_end + "<p>");
   $(".card-title").empty().append("Frame Data for " + $(this).text())
   }
 )
 
 $(".uptilt").click(function(){
-  $(".totalframes").empty().append("Total Frames: " + characterArr["0"].attacks.tilt[3].total_frames+ "  Active Frames: " + characterArr["0"].attacks.tilt[4].hit_start + "-" +characterArr["0"].attacks.tilt[4].hit_end);
+  $(".totalframes").empty().append("<p>Total Frames: " + characterArr["0"].attacks.tilt[3].total_frames+ "  Active Frames: " + characterArr["0"].attacks.tilt[4].hit_start + "-" +characterArr["0"].attacks.tilt[4].hit_end + "<p>");
   $(".card-title").empty().append("Frame Data for " + $(this).text())
   }
 )
 
 $(".dtilt").click(function(){
-  $(".totalframes").empty().append("Total Frames: " + characterArr["0"].attacks.tilt[2].total_frames+ "  Active Frames: " + characterArr["0"].attacks.tilt[3].hit_start + "-" +characterArr["0"].attacks.tilt[3].hit_end);
+  $(".totalframes").empty().append("<p>Total Frames: " + characterArr["0"].attacks.tilt[2].total_frames+ "  Active Frames: " + characterArr["0"].attacks.tilt[3].hit_start + "-" +characterArr["0"].attacks.tilt[3].hit_end + "<p>");
   $(".card-title").empty().append("Frame Data for " + $(this).text())
   }
 )
+// Aerial attack functions. Changes depends on times hit
+$(".upair").click(function(){
+  //Fox = 6
+  if (characterArr["0"].id == 6) {
+    $(".totalframes").empty().append("<p>Total Frames: " + characterArr["0"].attacks.aerial[1].total_frames+ "<p> <p>  Active Frames:<p>  <p>First Hit: "  + characterArr["0"].attacks.aerial[1].hit_start + "-" +characterArr["0"].attacks.aerial[1].hit_end
+    + "<p> <p>Second hit: " +characterArr["0"].attacks.aerial[1].hit_second_start + "-" + characterArr["0"].attacks.aerial[1].hit_second_end +"<p>");
+    $(".card-title").empty().append("Frame Data for " + $(this).text())
+  } else {
+    $(".totalframes").empty().append("<p>Total Frames: " + characterArr["0"].attacks.aerial[1].total_frames+ "  Active Frames: "  + characterArr["0"].attacks.aerial[1].hit_start + "-" +characterArr["0"].attacks.aerial[1].hit_end + "<p>")
+    $(".card-title").empty().append("Frame Data for " + $(this).text())
+  }
+})
 
+$(".nair").click(function(){
+  $(".totalframes").empty().append("<p>Total Frames: " + characterArr["0"].attacks.aerial["0"].total_frames+ "  Active Frames: " + characterArr["0"].attacks.aerial[0].hit_start + "-" +characterArr["0"].attacks.aerial[0].hit_end + "<p>");
+  $(".card-title").empty().append("Frame Data for " + $(this).text()+":")
+  }
+)
+
+$(".bair").click(function(){
+  $(".totalframes").empty().append("<p>Total Frames: " + characterArr["0"].attacks.aerial[4].total_frames+ "  Active Frames: " + characterArr["0"].attacks.aerial[4].hit_start + "-" +characterArr["0"].attacks.aerial[4].hit_end +"<p>");
+  $(".card-title").empty().append("Frame Data for " + $(this).text())
+  }
+)
 
 
 //This bracket is appReadybracket!
@@ -71,7 +94,7 @@ $(".dtilt").click(function(){
 //     })
 //   })
 //   $(".jab1").click(function(){
-//     $(".totalframes").empty().append("Total Frames: " + foxArr["0"].attacks.jab["0"].total_frames+ "  Active Frames: " + foxArr[0].attacks.jab[0].hit_start + "-" +foxArr[0].attacks.jab[0].hit_end);
+//     $(".totalframes").empty().append("Total Frames: " + foxArr["0"].attacks.jab["0"].total_frames+ "  Active Frames: " + foxArr[0].attacks.jab[0].hit_start + "-" +foxArr[0].attacks.jab[0].hit_end + "<p>");
 //     $(".card-title").empty().append("Frame Data for Jab 1")
 //     $(".gifattack").attr("src", "https://smashboards.com/proxy.php?image=http%3A%2F%2Fi882.photobucket.com%2Falbums%2Fac30%2FX1-12%2FFoxJab.gif%3Ft%3D1282910671&hash=26b37c01a59c854fece263e44035a494")
 //     // $(".activeframes").append("<p>Active Frames: " + foxArr.hit_start + "-" +foxArr.hit_end+ "<p>" )
