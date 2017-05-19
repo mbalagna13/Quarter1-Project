@@ -6,7 +6,7 @@ function appReady(){
   var charactergif = [];
   var characterStr = ""
   //Get character id and attack array from first row
-$('.DrMario, .Mario, .Luigi, .Bowser, .Peach, .Yoshi, .DonkeyKong, .CaptainFlacon, .Ganon, .fox').click(function() {
+$('.DrMario, .Mario, .Luigi, .Bowser, .Peach, .Yoshi, .DonkeyKong, .CaptainFlacon, .Ganon, .fox, .falco, .ness, .iceclimbers, .kirby, .samus, .zelda, .link, .younglink, .pichu, .pikachu, .jigglypuff, .mewtwo, .marth, .roy, .gameandwatch').click(function() {
   $.get('https://cors-anywhere.herokuapp.com/http://www.smashlounge.com/api/attack/char/'+this.id).then(function(response){
 
     // console.log(response);
