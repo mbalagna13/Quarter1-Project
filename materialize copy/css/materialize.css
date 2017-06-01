@@ -3,6 +3,7 @@
  * Copyright 2014-2015 Materialize
  * MIT License (https://raw.githubusercontent.com/Dogfalo/materialize/master/LICENSE)
  */
+
  body {
     background-image: url("http://i.imgur.com/lio7A9u.png");
     background-repeat: no-repeat;
@@ -3111,7 +3112,7 @@ td, th {
 
 .video-container {
   position: relative;
-  padding-bottom: 56.25%;
+  padding-bottom: 70.25%;
   height: 0;
   overflow: hidden;
 }
