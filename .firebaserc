@@ -1,5 +1,6 @@
 {
   "projects": {
-    "Smash frames": "q1-project-fb3f9"
+    "Smash frames": "q1-project-fb3f9",
+    "default": "q1-project-fb3f9"
   }
 }
