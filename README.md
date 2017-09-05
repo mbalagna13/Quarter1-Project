@@ -1,5 +1,3 @@
-# Q1 Project Proposal
-# HERE WE GO!
 
 ## Project Description
 *  This application will help provide a simpler way to provide attack frame data
