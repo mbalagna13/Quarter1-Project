@@ -1,10 +1,10 @@
 
-## Project Description
+## App Description
 *  This application will help provide a simpler way to provide attack frame data
 for characters in Super Smash Brothers Melee by simply inputting a character and
 and one of their various attacks.  
 
-## What problem does your project solve?
+## What problem does your app solve?
 *  My project gives Super Smash Brother Melee (SSBM) players an easier way to
 find
 frame data for specific characters and their own specific attacks.
@@ -19,9 +19,9 @@ players.
 *  Casual players
 *  Competitive players
 
-## How will your project solve this problem?
+## How will your app solve this problem?
 * My application will help simplify the process of finding specific frame data for
-character's attacks and special moves. All while hoping to
+character's attacks and special moves.
 
 ## What inputs does it need?
 * Specific character
@@ -35,7 +35,6 @@ character's attacks and special moves. All while hoping to
 
 ## What web API(s) will it use?
 * The [SmashLounge API] (http://www.smashlounge.com/api/doc)
-*  The [Reddit API](https://www.reddit.com/dev/api/#section_subreddits)
 
 
 ## What technologies do you plan to use?
